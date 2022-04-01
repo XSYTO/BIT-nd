@@ -24,26 +24,34 @@ if (zalia === action) {
 } if (raudona === action) {
     console.log('Eiti draudziama!');
 }
+
 console.log('---3---');
 const d = 2;
 const k = 8;
 const n1 = 5;
+const d1 = 3;
+const k1 = 18;
 
-if (d / k < n1) {
+if (k / d < n1) {
+    console.log('Knygos telpa i dezes');
+} else if (k / d > n1) {
+    console.log('Knygos telpa i dezes');
+} if (k1 / d1 > n1) {
+    console.log('Knygos netelpa i dezes');
+} else if (k1 / d1 < n1) {
     console.log('Knygos telpa i dezes');
 }
 
-const d1 = 3;
-const k1 = 18;
-const n2 = 5;
 
-if (k1 / d1 > n2) {
-    console.log('Knygos netelpa i dezes');
-}
 console.log('---4---');
 let a1 = 1;
 let b1 = 2;
-console.log(++a1 , --b1);
+
+if (++a1 > --b1) {
+    console.log(a1, 'yra daugiau negu', b1);
+} else if (a1 < b1) {
+    console.log(a1, 'yra maziau negu', b1);
+}
 
 console.log('---5---');
 const c = 50;
@@ -68,7 +76,7 @@ console.log('---7---');
 
 const menesiai = [undefined, 31, 28, 31, 30, 31, 30, 31, 31, 31, 30, 31, 31]
 const menesioNumeris = 10;
-console.log(`menesiu dienos, ${menesiai[menesioNumeris]}`);
+console.log(`menesio dienu skaicius: ${menesiai[menesioNumeris]}`);
 
 console.log('---8---');
 
@@ -100,11 +108,11 @@ if (kauliukas === 1) {
 const ejoLetai = 43;
 const ejoGreitai = 23;
 const min1 = 29;
-const val1 = 8*60;
-const val = 9*60;
+const val1 = 8;
+const val = 9;
 const min = 5;
-if (val1 + min1 + ejoLetai > val + min) {
+if (val1*60 + min1 + ejoLetai > val*60 + min) {
     console.log('Petras į pamoką pavėluos');
-} if (val1 + min1 + ejoGreitai < val + min) {
+} if (val1*60 + min1 + ejoGreitai < val*60 + min) {
     console.log('Petras į pamoką nepavėluos');
 }
